@@ -1,23 +1,33 @@
-window.onload = function () {
-	$(".ber").click(function (e) {
-		$(".ber-poppap").addClass("show")
-	});
-	$(".ol").click(function (e) {
-		$(".ol-poppap").addClass("show")
-	});
-	$(".pux").click(function (e) {
-		$(".ber-poppap").removeClass("show");
-		$(".ol-poppap").removeClass("show");
-	});
 	var d=new Date();
 var day=d.getDate();
 var month=d.getMonth() + 1;
-var year=d.getFullYear();
-var lt = d.toLocaleTimeString();
-console.log(lt);
+var year=d.getFullYear() + "." + d.getHours() + ":" + d.getMinutes();
+var lt = d.getHours();
 var dats = (day + "." + month + "." + year  );
-    document.getElementById("isbn").value = dats;
-	document.getElementById("isben").value = dats;
+window.onload = function () {
+    $(".ber").click(function (e) {
+        $(".ber-poppap").addClass("show")
+    });
+    $(".ol").click(function (e) {
+        $(".ol-poppap").addClass("show")
+    });
+    $(".pux").click(function (e) {
+        $(".ber-poppap").removeClass("show");
+        $(".ol-poppap").removeClass("show");
+    });
+    $("#submitBtn").click(function() {
+        document.getElementById("isbn").value = dats;
+        inpesr2 = dats
+        /* Act on the event */
+    });
+    $("#bloxeesq").click(function () {
+        document.getElementById("isbn").value = dats;
+        inpesr2 = dats
+    })
+
+        // document.getElementById("isben").value = dats;
+        document.getElementById("isbn").value = dats;
+        inpesr2 = dats
 };
 
 // Book Class: Represents a Book
@@ -252,7 +262,7 @@ document.querySelector("#book-form").addEventListener("submit", (e) =>{
   // 2
   function addItem(e) {
     e.preventDefault();
-    const text = (this.querySelector('[name=item]','[name=item1]','[name=item2]')).value;
+    const text = (this.querySelector('[name=item]','[name=item1]',dats)).value;
     const item = {
       text,
       done: false
@@ -274,7 +284,7 @@ document.querySelector("#book-form").addEventListener("submit", (e) =>{
         <div>
         <p>От кого: <span for="item${i}">${plate.text}</span></p>
         <p>Сколько: <span for="item1${i}">${plate.text}</span></p>
-        <p>Дата: <span for="item2${i}">${plate.text}</span></p>
+        <p>Дата: <span for="item2${i}">${dats}</span></p>
         </li>
       `;
     }).join('');
