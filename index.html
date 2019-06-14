@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<p class="ber">Добавить <i class="fa fa-plus-circle"></i></p>
+			<p class="ol">Добавить <i class="fa fa-plus-circle"></i></p>
+		</div>
+	</header>
+	<div class="row">
+		<div class="item box-berdi">
+			<div class=" table table-striped mt-5">
+
+		            <div id="book-list" class="box">
+
+		            </div>
+		        </div>
+		</div>
+		<div class="item box-old">
+			<div class="plates box"></div>
+		</div>
+	</div>
+<div class="ber-poppap">
+	<div class="verona">
+		<i class="fa fa-close pux"></i>
+		<div class="container">
+		        <form id="book-form">
+		                <input placeholder="Кому" type="text" class="form-control" id="tittle" name="tittle">
+		                <input placeholder="сколько" type="text" class="form-control" id="author" name="author">
+		                <input style="display: none;" type="text" class="form-control" id="isbn" name="isbn">
+		            <input type="submit" id="submitBtn" class="btn btn-primary btn-block">
+		        </form>
+
+
+		    </div>
+	</div>
+</div>
+
+<div class="ol-poppap">
+
+	    <div class="verona">
+			<i class="fa fa-close pux"></i>
+	    	<form class="add-items">
+	    	  <input type="text" name="item" placeholder="От кого" required>
+	    	  <input type="text" name="item1" placeholder="Сколько" required>
+	    	  <input style="display: none;" id="isben" type="text" name="item2" placeholder="Item Name" required>
+	    	  <input type="submit" >
+	    	</form>
+	    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<!-- <script src="phonegap.js"></script> -->
+</html>

@@ -1,0 +1,104 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+	width: 100%;
+	/*overflow: hidden;*/
+	height: auto;
+}
+header{
+	height: 10vh;
+}
+.row{
+	display: flex;
+	width: 100%;
+
+	margin: 0 auto;
+}
+.menu{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	font-size: 24px;
+	color:red;
+	align-items: center;
+}
+.menu p i{
+	margin-left: 5px;
+}
+.menu p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+header{
+	height: 20vh;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+}
+.row .item{
+	max-width: 50%;
+	min-width: 50%;
+	border:1px solid ;
+	min-height: 80vh;
+}
+.box-berdi{
+	background: #ccc;
+}
+.box-old{
+	background: #FFCC33;
+}
+.box p{
+	font-size: 4vw;
+}
+.fa-close{
+	position: absolute;
+	color:blue;
+	top: 15px;
+	right: 15px;
+	font-size: 2em;
+}
+.ol-poppap,
+.ber-poppap{
+	width: 100%;
+	min-height: 100vh;
+	background: #11111145;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.ol-poppap.show,
+.ber-poppap.show{
+	display: flex;
+}
+.verona{
+	position: relative;
+	background:#fff;
+	width: 60%;
+	padding: 15px;
+}
+.verona form{
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.verona form input{
+	margin: 10px 0;
+	height: 20px;
+	border:none;
+	text-align: center;
+	border-bottom:2px solid blue;
+}

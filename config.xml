@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns  = "https://www.w3.org/ns/widget"
+	xmlns:gap  = "https://phonegap.com/"
+	id 		   = "com.phonegap.example"
+	versionCode= "10"
+	version	   = "1.0.0">
+
+
+	<name>AlZakladka</name>
+
+	<description>
+		Lorem ipsum dolor sit amet, consectetur.
+	</description>
+
+	<author href="http://albori.tk">
+		albori
+	</author>
+
+</widget>
